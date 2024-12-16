@@ -1,5 +1,4 @@
 require 'cgi'
-require 'debug'
 
 class CarouselItemA
   HOST = 'https://www.google.com'
