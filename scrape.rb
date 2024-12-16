@@ -3,7 +3,7 @@ require 'json'
 
 FILES_DIR = './files'
 
-%w[van-gogh-paintings-new].each do |path|
+%w[van-gogh-paintings rhcp-members list-of-popes van-gogh-paintings-new].each do |path|
   File.open(File.join(FILES_DIR, "#{path}.html")) do |html|
     result = JSON.pretty_generate(KnowledgeGraph.new(html).to_h)
 

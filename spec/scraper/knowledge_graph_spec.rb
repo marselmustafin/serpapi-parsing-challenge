@@ -52,7 +52,7 @@ describe KnowledgeGraph do
       include_examples 'correct result structure'
     end
 
-    context 'when html does not contain any type' do
+    context 'when html does not contain any gallery' do
       let(:html) do
         <<~HTML
           <!DOCTYPE html>

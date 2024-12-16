@@ -10,11 +10,14 @@ class ImageMap
   end
 
   def to_h
-    [single_script_content, multiple_scripts_content].lazy.map { build_mapping(_1) }.find(&:any?) ||
-      raise(ElementNotFoundError)
+    build_map || raise(ElementNotFoundError)
   end
 
   private
+
+  def build_map
+    [single_script_content, multiple_scripts_content].lazy.map { build_mapping(_1) }.find(&:any?)
+  end
 
   def single_script_content
     doc.at("//script[contains(text(), 'function _setImagesSrc')]")&.text.to_s
