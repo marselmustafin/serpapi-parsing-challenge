@@ -1,6 +1,6 @@
 # SERP API Code Challenge
 
-This document provides a solution to the SERP API Code Challenge. The original challenge description can be found [here](https://github.com/marselmustafin/serpapi-parsing-challenge/blob/master/CHALLENGE.md).
+This project provides a solution to the SERP API Code Challenge. The original challenge description can be found [here](https://github.com/marselmustafin/serpapi-parsing-challenge/blob/master/CHALLENGE.md).
 
 ## Solution Overview
 
